@@ -1,3 +1,9 @@
+import { FirstScreen } from "../../components/FirstScreen";
+
 export const Gallery = () => {
-  return <div>Gallery</div>;
+  return (
+    <article>
+      <FirstScreen image="/images/gallery.jpg" page="sub" />
+    </article>
+  );
 };

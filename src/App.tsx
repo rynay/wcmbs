@@ -16,12 +16,10 @@ export const App = () => {
       <Switch>
         <Route path="/" exact>
           <Header page="main" type="header" />
-          <FirstScreen page="main" />
           <Footer type="simple" />
         </Route>
         <Route>
           <Header page="sub" type="header" />
-          <FirstScreen page="sub" />
           <Switch>
             <Route path="/about">
               <About />
