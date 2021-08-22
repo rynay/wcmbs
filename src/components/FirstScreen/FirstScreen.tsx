@@ -59,13 +59,17 @@ export const FirstScreen = ({ page, image }: Props) => {
       setContent(
         <>
           <h2>{pageInfo.heading}</h2>
-          <ul>
+          <div>
             {breadCrumbs.map((page) => (
-              <Link key={page.path} to={page.anchor}>
+              <Link
+                className={s.firstScreen__breadCrumb}
+                key={page.path}
+                to={page.path}
+              >
                 {page.heading}
               </Link>
             ))}
-          </ul>
+          </div>
         </>
       );
     }

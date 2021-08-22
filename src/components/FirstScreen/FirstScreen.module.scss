@@ -74,5 +74,28 @@
         background-color: #fff;
       }
     }
+
+    h2 {
+      font-size: 5rem;
+    }
+
+    .firstScreen__breadCrumb {
+      font-size: 2rem;
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.2s;
+
+      &:not(:last-child) {
+        &::after {
+          content: "/";
+          padding: 0 0.35em;
+          color: #f10f3b;
+        }
+      }
+
+      &:hover {
+        color: #f10f3b;
+      }
+    }
   }
 }
