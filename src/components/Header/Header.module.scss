@@ -20,6 +20,30 @@
     bottom: 0;
     right: 0;
     left: 0;
+    background-color: #000;
+    padding: 3rem 0;
+
+    p {
+      text-align: center;
+      color: rgb(160, 160, 160);
+      font-size: 1.2rem;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .header__toTopLink {
+      cursor: pointer;
+      max-width: 10rem;
+      max-height: 10rem;
+
+      svg {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
   }
 
   &__container {
