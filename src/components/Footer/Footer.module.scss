@@ -54,12 +54,10 @@
     padding: 3rem;
     position: absolute;
     display: flex;
+    justify-content: space-between;
     bottom: 1rem;
     right: 0;
     left: 0;
-    & > * {
-      flex: 1;
-    }
     .footer__right {
       text-align: right;
 

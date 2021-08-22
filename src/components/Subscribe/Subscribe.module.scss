@@ -6,14 +6,31 @@
   background: url("../../subscribe.jpg") center center / cover no-repeat;
 
   p {
+    font-size: 1.4rem;
     margin-top: 4rem;
     margin-bottom: 1rem;
     color: #fff;
   }
   form {
+    max-width: 55rem;
+    width: 90vw;
+    display: flex;
+    border-radius: 0.25em;
+    overflow: hidden;
+
     input {
+      flex: 4;
+      padding: 1em;
+      border: 0;
+      min-width: 30rem;
     }
     button {
+      cursor: pointer;
+      flex: 1;
+      padding: 1em 3em;
+      border: 0;
+      color: #fff;
+      background-color: #f10f3b;
     }
   }
 }
