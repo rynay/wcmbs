@@ -1,0 +1,19 @@
+.heading {
+  font-size: 3rem;
+  color: #fff;
+  padding: 0.75em 0;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0.5rem;
+    width: 7rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: #f10f3b;
+    transform: translateX(-50%);
+  }
+}
