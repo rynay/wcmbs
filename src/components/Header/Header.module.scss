@@ -9,17 +9,13 @@
   }
 
   &_top {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
   }
 
   &_bottom {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background-color: #000;
     padding: 3rem 0;
 
@@ -33,16 +29,18 @@
         text-decoration: none;
       }
     }
+  }
+  &__toTopLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
 
-    .header__toTopLink {
-      cursor: pointer;
-      max-width: 10rem;
-      max-height: 10rem;
-
-      svg {
-        height: 3rem;
-        width: 3rem;
-      }
+    svg {
+      height: 3rem;
+      width: 3rem;
     }
   }
 
@@ -63,7 +61,9 @@
 
   &__left {
     max-width: 10rem;
-    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .header__logoLink {
       max-height: 10rem;

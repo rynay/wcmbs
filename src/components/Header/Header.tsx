@@ -30,16 +30,18 @@ export const Header = ({ type, page }: Props) => {
           <ul>
             {pages.map((page) => (
               <li key={page.anchor}>
-                <NavLink className={s.header__navLink} to={page.path}>
-                  {page.anchor}
-                </NavLink>
+                <SLink to="top" smooth={true}>
+                  <NavLink className={s.header__navLink} to={page.path}>
+                    {page.anchor}
+                  </NavLink>
+                </SLink>
               </li>
             ))}
           </ul>
         </nav>
         {type === "footer" && (
           <p className={s.header__copyright}>
-            © West Coast Cycling - Cycling Courses <br /> Builded by{" "}
+            © West Coast Cycling - Cycling Courses <br /> Build by{" "}
             <a href="https://github.com/Rynay" target="_blank" rel="noreferrer">
               Rynay
             </a>{" "}
@@ -72,6 +74,7 @@ export const Header = ({ type, page }: Props) => {
           <SLink
             className={s.header__toTopLink}
             to="top"
+            smooth={true}
             aria-label="scroll back to top"
           >
             <Up />
