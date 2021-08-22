@@ -26,8 +26,22 @@ export const FirstScreen = ({ page, image }: Props) => {
             Upgrade your skills to the next level. Start training with pro
             riders today!
           </p>
-          <Link to="/registration">Register now</Link>
-          <Link to="/about">Learn more</Link>
+          <div>
+            <Link
+              className={
+                s.firstScreen__link + " " + s.firstScreen__link_registration
+              }
+              to="/registration"
+            >
+              Register now
+            </Link>
+            <Link
+              className={s.firstScreen__link + " " + s.firstScreen__link_about}
+              to="/about"
+            >
+              Learn more
+            </Link>
+          </div>
         </>
       );
     } else {
@@ -44,7 +58,7 @@ export const FirstScreen = ({ page, image }: Props) => {
       }
       setContent(
         <>
-          <h1>{pageInfo.heading}</h1>
+          <h2>{pageInfo.heading}</h2>
           <ul>
             {breadCrumbs.map((page) => (
               <Link key={page.path} to={page.anchor}>
@@ -60,7 +74,7 @@ export const FirstScreen = ({ page, image }: Props) => {
   return (
     <section className={page === "main" ? s.firstScreen_full : s.firstScreen}>
       <img className={s.firstScreen__image} src={image} alt="hero" />
-      <div>{content}</div>
+      <div className={s.firstScreen__content}>{content}</div>
     </section>
   );
 };
