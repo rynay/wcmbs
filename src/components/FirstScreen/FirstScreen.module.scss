@@ -1,14 +1,15 @@
 .firstScreen {
-  min-height: 100vh;
+  min-height: 80vh;
 
   &__image {
-    width: 100%;
-    height: 100%;
-    &_cover {
-      object-fit: cover;
-    }
-    &_contain {
-      object-fit: contain;
+    height: 80vh;
+    object-fit: cover;
+  }
+  &_full {
+    min-height: 100vh;
+
+    .firstScreen__image {
+      height: 100vh;
     }
   }
 }

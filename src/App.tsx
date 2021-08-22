@@ -9,14 +9,14 @@ import { Contact } from "./pages/Contact";
 import { Courses } from "./pages/Courses";
 import { FAQ } from "./pages/FAQ";
 import { Gallery } from "./pages/Gallery";
+import { Home } from "./pages/Home";
 
 export const App = () => {
   return (
     <>
       <Switch>
         <Route path="/" exact>
-          <Header page="main" type="header" />
-          <Footer type="simple" />
+          <Home />
         </Route>
         <Route>
           <Header page="sub" type="header" />

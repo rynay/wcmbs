@@ -7,16 +7,8 @@ type Props = {
 
 export const FirstScreen = ({ page, image }: Props) => {
   return (
-    <section className={s.firstScreen}>
-      <img
-        className={`${s.firstScreen__image} ${
-          page === "main"
-            ? s.firstScreen__image_cover
-            : s.firstScreen__image_contain
-        }`}
-        src={image}
-        alt="hero"
-      />
+    <section className={page === "main" ? s.firstScreen_full : s.firstScreen}>
+      <img className={s.firstScreen__image} src={image} alt="hero" />
     </section>
   );
 };
