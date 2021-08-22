@@ -28,7 +28,7 @@ export const Header = ({ type, page }: Props) => {
       <div className={s.header__middle}>
         <nav className={s.header__nav}>
           <ul>
-            {pages.map((page) => (
+            {pages.slice(1).map((page) => (
               <li key={page.anchor}>
                 <SLink to="top" smooth={true}>
                   <NavLink className={s.header__navLink} to={page.path}>

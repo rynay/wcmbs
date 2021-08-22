@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <>
       <Header page="main" type="header" />
-      <FirstScreen page="main" image="/images/hero.jpg" />
+      <FirstScreen page="main" image="/images/hero.jpg"></FirstScreen>
       <Footer type="simple" />
     </>
   );
