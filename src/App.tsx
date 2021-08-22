@@ -13,13 +13,15 @@ import { Gallery } from "./pages/Gallery";
 export const App = () => {
   return (
     <>
-      <Header type="header" />
-      <FirstScreen />
       <Switch>
         <Route path="/" exact>
+          <Header page="main" type="header" />
+          <FirstScreen page="main" />
           <Footer type="simple" />
         </Route>
         <Route>
+          <Header page="sub" type="header" />
+          <FirstScreen page="sub" />
           <Switch>
             <Route path="/about">
               <About />
@@ -42,7 +44,7 @@ export const App = () => {
           </Switch>
           <Subscribe />
           <Footer type="complicated" />
-          <Header type="footer" />
+          <Header page="sub" type="footer" />
         </Route>
       </Switch>
     </>
