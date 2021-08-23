@@ -3,12 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import s from "./FirstScreen.module.scss";
 import { pages } from "../../data/pages";
 
-type Props = {
-  page: "main" | "sub";
-  image: string;
-};
-
-export const FirstScreen = ({ page, image }: Props) => {
+export const FirstScreen = () => {
   const location = useLocation();
   const [content, setContent] = useState<ReactElement>();
 
@@ -76,8 +71,18 @@ export const FirstScreen = ({ page, image }: Props) => {
   }, [location]);
 
   return (
-    <section className={page === "main" ? s.firstScreen_full : s.firstScreen}>
-      <img className={s.firstScreen__image} src={image} alt="hero" />
+    <section
+      className={location.pathname === "/" ? s.firstScreen_full : s.firstScreen}
+    >
+      <img
+        className={s.firstScreen__image}
+        src={
+          location.pathname === "/"
+            ? `/images/hero.jpg`
+            : `/images/${location.pathname.slice(1)}.jpg`
+        }
+        alt="hero"
+      />
       <div className={s.firstScreen__content}>{content}</div>
     </section>
   );

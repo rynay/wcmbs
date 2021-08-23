@@ -14,6 +14,7 @@ import { Home } from "./pages/Home";
 export const App = () => {
   return (
     <>
+      <FirstScreen />
       <Switch>
         <Route path="/" exact>
           <Home />
