@@ -1,8 +1,7 @@
-import { ReactElement } from "react";
 import s from "./ImagesSection.module.scss";
 
 type Props = {
-  children: ReactElement | ReactElement[];
+  children: JSX.Element | JSX.Element[];
 };
 
 export const ImagesSection = ({ children }: Props) => {

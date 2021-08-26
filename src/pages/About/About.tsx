@@ -1,7 +1,6 @@
 import { Heading } from "../../components/Heading";
 import { ImagesSection } from "../../components/ImagesSection";
 import { PageContentLayout } from "../../components/PageContentLayout";
-import s from "./About.module.scss";
 
 export const About = () => {
   return (
@@ -90,7 +89,7 @@ export const About = () => {
         </p>
       </section>
       <Heading level={2}>Partners & Sponsors</Heading>
-      <div className={s.container}>
+      <div className="container_small pb_middle">
         <ImagesSection>
           <img src="/images/about-sponsor-1.png" alt="" />
           <img src="/images/about-sponsor-2.png" alt="" />

@@ -31,3 +31,30 @@ h6 {
   font-family: Montserrat, sans-serif;
   font-weight: 800;
 }
+
+.container {
+  &_small {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  &_middle {
+    max-width: 104rem;
+    margin: 0 auto;
+  }
+  &_large {
+    max-width: 114rem;
+    margin: 0 auto;
+  }
+}
+
+.pb {
+  &_small {
+    padding-bottom: 4rem;
+  }
+  &_middle {
+    padding-bottom: 7rem;
+  }
+  &_large {
+    padding-bottom: 10rem;
+  }
+}
