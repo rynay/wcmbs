@@ -1,0 +1,19 @@
+.article {
+  max-width: 114rem;
+  margin: -5rem auto 0;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+
+  section {
+    padding: 7rem;
+
+    & > *:not(:last-child):not(h2) {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 4rem;
+    }
+  }
+}

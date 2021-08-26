@@ -53,7 +53,7 @@ export const FirstScreen = () => {
       }
       setContent(
         <>
-          <h2>{pageInfo.heading}</h2>
+          <h1>{pageInfo.heading}</h1>
           <div>
             {breadCrumbs.map((page) => (
               <Link
