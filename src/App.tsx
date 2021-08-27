@@ -12,10 +12,11 @@ import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/Home";
 import { MTBCourse } from "./pages/MTBCourse";
 import { Registration } from "./pages/Registration";
+import { Scrollbars } from "react-custom-scrollbars";
 
 export const App = () => {
   return (
-    <>
+    <Scrollbars style={{ width: "100vw", height: "100vh" }}>
       <FirstScreen />
       <Switch>
         <Route path="/" exact>
@@ -54,6 +55,6 @@ export const App = () => {
           <Header page="sub" type="footer" />
         </Route>
       </Switch>
-    </>
+    </Scrollbars>
   );
 };
