@@ -26,7 +26,7 @@ export const FirstScreen = () => {
               className={
                 s.firstScreen__link + " " + s.firstScreen__link_registration
               }
-              to="/registration"
+              to="/courses/registration"
             >
               Register now
             </Link>
@@ -46,7 +46,9 @@ export const FirstScreen = () => {
       const routes = location.pathname.split("/");
       for (const route of routes) {
         const routeInfo = pages.find(
-          (page) => page.path === route || page.path.slice(1) === route
+          (page) =>
+            page.path === route ||
+            page.path.split("/")[page.path.split("/").length - 1] === route
         );
         if (!routeInfo) continue;
         breadCrumbs.push(routeInfo);
@@ -79,7 +81,11 @@ export const FirstScreen = () => {
         src={
           location.pathname === "/"
             ? `/images/hero.jpg`
-            : `/images/${location.pathname.slice(1)}.jpg`
+            : `/images/${
+                location.pathname.split("/")[
+                  location.pathname.split("/").length - 1
+                ]
+              }.jpg`
         }
         alt="hero"
       />

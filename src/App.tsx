@@ -22,22 +22,22 @@ export const App = () => {
         <Route>
           <Header page="sub" type="header" />
           <Switch>
-            <Route path="/about">
+            <Route path="/about" exact>
               <About />
             </Route>
-            <Route path="/courses">
+            <Route path="/courses" exact>
               <Courses />
             </Route>
-            <Route path="/coaches">
+            <Route path="/coaches" exact>
               <Coaches />
             </Route>
-            <Route path="/faq">
+            <Route path="/faq" exact>
               <FAQ />
             </Route>
-            <Route path="/gallery">
+            <Route path="/gallery" exact>
               <Gallery />
             </Route>
-            <Route path="/contact">
+            <Route path="/contact" exact>
               <Contact />
             </Route>
           </Switch>
