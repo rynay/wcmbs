@@ -1,0 +1,56 @@
+.course {
+  cursor: pointer;
+  position: relative;
+  padding: 4rem 3rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    h3 {
+      color: #f10f3b;
+    }
+    .course__button {
+      background-color: #fff;
+      color: #292929;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__content {
+    flex: 5;
+    & > *:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+
+    h3 {
+      font-size: 2.6rem;
+      transition: color 0.2s;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  &__button {
+    flex: 1;
+    padding: 1em;
+    background-color: #f10f3b;
+    color: #fff;
+    transition: color 0.2s, background-color 0.2s;
+    font-size: 1.6rem;
+    border: 0;
+  }
+}

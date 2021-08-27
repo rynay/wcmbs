@@ -21,7 +21,9 @@ export const Courses = () => {
       </section>
       <div className="container_middle">
         {courses.map((course) => (
-          <Course content={course} />
+          <div key={course.title} className="mb_small">
+            <Course content={course} />
+          </div>
         ))}
       </div>
       <section>

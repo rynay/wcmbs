@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { courses } from "../../data/courses";
+import s from "./Course.module.scss";
 
 type Props<T> = {
   content: T extends (infer R)[] ? R : T;
@@ -7,13 +8,13 @@ type Props<T> = {
 
 export const Course = ({ content }: Props<typeof courses>) => {
   return (
-    <Link to={content.link}>
-      <img src={content.image} alt="" />
-      <div>
+    <Link className={s.course} to={content.link}>
+      <img className={s.course__image} src={content.image} alt="" />
+      <div className={s.course__content}>
         <h3>{content.title}</h3>
         <p>{content.description}</p>
       </div>
-      <button>Learn more</button>
+      <button className={s.course__button}>Learn more</button>
     </Link>
   );
 };
