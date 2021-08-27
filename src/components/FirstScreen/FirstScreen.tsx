@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from "react";
+import { ReactElement, useLayoutEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import s from "./FirstScreen.module.scss";
 import { pages } from "../../data/pages";
@@ -7,8 +7,7 @@ export const FirstScreen = () => {
   const location = useLocation();
   const [content, setContent] = useState<ReactElement>();
 
-  useEffect(() => {
-    console.log(location.pathname);
+  useLayoutEffect(() => {
     if (location.pathname === "/") {
       setContent(
         <>

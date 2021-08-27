@@ -10,6 +10,8 @@ import { Courses } from "./pages/Courses";
 import { FAQ } from "./pages/FAQ";
 import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/Home";
+import { MTBCourse } from "./pages/MTBCourse";
+import { Registration } from "./pages/Registration";
 
 export const App = () => {
   return (
@@ -27,6 +29,12 @@ export const App = () => {
             </Route>
             <Route path="/courses" exact>
               <Courses />
+            </Route>
+            <Route path="/courses/mtb-course" exact>
+              <MTBCourse />
+            </Route>
+            <Route path="/courses/registration" exact>
+              <Registration />
             </Route>
             <Route path="/coaches" exact>
               <Coaches />
