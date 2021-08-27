@@ -89,7 +89,7 @@ export const About = () => {
         </p>
       </section>
       <Heading level={2}>Partners & Sponsors</Heading>
-      <div className="container_small pb_middle">
+      <div className="container_small">
         <ImagesSection>
           <img src="/images/about-sponsor-1.png" alt="" />
           <img src="/images/about-sponsor-2.png" alt="" />
