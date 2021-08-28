@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Subscribe } from "./components/Subscribe";
 import { About } from "./pages/About";
 import { Coaches } from "./pages/Coaches";
+import { CoachProfile } from "./pages/CoachProfile";
 import { Contact } from "./pages/Contact";
 import { Courses } from "./pages/Courses";
 import { FAQ } from "./pages/FAQ";
@@ -12,11 +13,10 @@ import { Gallery } from "./pages/Gallery";
 import { Home } from "./pages/Home";
 import { MTBCourse } from "./pages/MTBCourse";
 import { Registration } from "./pages/Registration";
-import { Scrollbars } from "react-custom-scrollbars";
 
 export const App = () => {
   return (
-    <Scrollbars style={{ width: "100vw", height: "100vh" }}>
+    <>
       <FirstScreen />
       <Switch>
         <Route path="/" exact>
@@ -40,6 +40,9 @@ export const App = () => {
             <Route path="/coaches" exact>
               <Coaches />
             </Route>
+            <Route path="/coaches/:name" exact>
+              <CoachProfile />
+            </Route>
             <Route path="/faq" exact>
               <FAQ />
             </Route>
@@ -55,6 +58,6 @@ export const App = () => {
           <Header page="sub" type="footer" />
         </Route>
       </Switch>
-    </Scrollbars>
+    </>
   );
 };

@@ -32,12 +32,53 @@ h6 {
   font-weight: 800;
 }
 
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-align-center {
+  align-items: center;
+}
+.tdn {
+  text-decoration: none;
+}
+.bold {
+  font-weight: bold;
+}
+.red {
+  color: #f10f3b;
+}
+
+.fz-1 {
+  font-size: 1.6rem;
+}
+.fz-2 {
+  font-size: 1.8rem;
+}
+.fz-3 {
+  font-size: 2rem;
+}
+
+.padding {
+  &_small {
+    padding: 1em;
+  }
+  &_medium {
+    padding: 2em;
+  }
+  &_large {
+    padding: 3em;
+  }
+}
+
 .container {
   &_small {
     max-width: 80rem;
     margin: 0 auto;
   }
-  &_middle {
+  &_medium {
     max-width: 104rem;
     margin: 0 auto;
   }
@@ -51,7 +92,7 @@ h6 {
   &_small {
     padding-bottom: 4rem;
   }
-  &_middle {
+  &_medium {
     padding-bottom: 7rem;
   }
   &_large {
@@ -62,7 +103,7 @@ h6 {
   &_small {
     margin-bottom: 2rem;
   }
-  &_middle {
+  &_medium {
     margin-bottom: 4rem;
   }
   &_large {

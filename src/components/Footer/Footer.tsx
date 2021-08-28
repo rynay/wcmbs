@@ -1,5 +1,5 @@
+import { Socials } from "../Socials";
 import s from "./Footer.module.scss";
-import { socials } from "../../data/socials";
 
 type Props = {
   type: "simple" | "complicated";
@@ -40,18 +40,7 @@ export const Footer = ({ type }: Props) => {
             </div>
             <div className={s.footer__right}>
               <h3>Follow Us</h3>
-              <ul>
-                {socials.map((item) => {
-                  const Icon = item.icon;
-                  return (
-                    <li key={item.alt}>
-                      <a href={item.link} aria-label={item.alt}>
-                        <Icon />
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
+              <Socials />
             </div>
           </div>
         </footer>

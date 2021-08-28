@@ -1,0 +1,17 @@
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__button {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 3em;
+    background-color: #f10f3b;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #292929;
+    }
+  }
+}

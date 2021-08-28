@@ -4,10 +4,13 @@
   position: relative;
   z-index: 1;
   background-color: #fff;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 
   section {
     padding: 7rem;
+    &:first-of-type {
+      padding-top: 5rem;
+    }
 
     & > *:not(:last-child):not(h2) {
       margin-bottom: 2rem;

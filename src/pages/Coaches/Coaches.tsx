@@ -1,3 +1,4 @@
+import { ContactUs } from "../../components/ContactUs";
 import { Heading } from "../../components/Heading";
 import { PageContentLayout } from "../../components/PageContentLayout";
 
@@ -29,6 +30,7 @@ export const Coaches = () => {
           luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </p>
       </section>
+      <ContactUs />
     </PageContentLayout>
   );
 };

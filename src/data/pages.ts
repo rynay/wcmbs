@@ -28,4 +28,10 @@ export const pages = [
     anchor: "Registration",
     heading: "Registration",
   },
+  {
+    navbar: false,
+    path: "/coaches/sam-nill",
+    anchor: "Sam Nill",
+    heading: "Sam Nill",
+  },
 ];

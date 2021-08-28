@@ -1,0 +1,22 @@
+.socials {
+  list-style: none;
+  display: flex;
+
+  & > *:not(:last-child) {
+    margin-right: 1em;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 5rem;
+    padding: 1.25rem;
+    background-color: #000;
+
+    svg {
+      fill: #fff;
+    }
+  }
+}
