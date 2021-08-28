@@ -4,9 +4,9 @@
   position: relative;
   z-index: 1;
   background-color: #fff;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 
-  section {
+  & > section {
     padding: 7rem;
     &:first-of-type {
       padding-top: 5rem;
