@@ -32,6 +32,14 @@ h6 {
   font-weight: 800;
 }
 
+.ff-montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
 .flex {
   display: flex;
 }
@@ -100,6 +108,13 @@ h6 {
 .pointer {
   cursor: pointer;
 }
+.map {
+  width: 100%;
+  border: 0;
+}
+.text-align-center {
+  text-align: center;
+}
 
 .pb {
   &_small {
@@ -121,6 +136,17 @@ h6 {
   }
   &_large {
     margin-bottom: 6rem;
+  }
+}
+.mt {
+  &_small {
+    margin-top: 2rem;
+  }
+  &_medium {
+    margin-top: 4rem;
+  }
+  &_large {
+    margin-top: 6rem;
   }
 }
 .alert-enter {

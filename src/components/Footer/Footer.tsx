@@ -31,11 +31,10 @@ export const Footer = ({ type }: Props) => {
             <div className={s.footer__middle}>
               <h3>Contacts</h3>
               <address>
-                13a Hammersmith Street, London, UK,
-                <br />
-                EC1M 6HJ <br />
-                Tel: +44 (0) 201 446 <br />
-                9888 Fax +44 (0) 202 448 7561 <br />
+                <div>2799 N Windsor Ave, Altadena, CA 91001, United States</div>
+                <div>Tel: +1 (737) 999-1504</div>
+                <div>Fax +1 (737) 999-1504</div>
+                <div>E-mail: contact@berider.com</div>
               </address>
             </div>
             <div className={s.footer__right}>

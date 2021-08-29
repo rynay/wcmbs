@@ -62,7 +62,7 @@ export const CoachProfile = () => {
       <section className="flex flex-column flex-align-center">
         <Socials />
         <a
-          className="tdn fz-3 bold red padding_small"
+          className="ff-montserrat tdn fz-3 fw-800 red padding_small"
           href="https://samnill.com"
           target="_blank"
           rel="noreferrer"

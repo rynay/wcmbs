@@ -67,7 +67,9 @@ export const Coaches = () => {
           luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </p>
       </section>
-      <ContactUs />
+      <div className="mb_large">
+        <ContactUs />
+      </div>
     </PageContentLayout>
   );
 };
