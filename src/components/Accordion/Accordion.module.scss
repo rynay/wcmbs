@@ -1,0 +1,47 @@
+.accordion {
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &__topic {
+    h3 {
+      padding: 2rem;
+      background-color: #fafafa;
+      display: flex;
+      align-items: center;
+      transition: color 0.2s, background-color 0.2s;
+
+      & > :first-child {
+        font-size: 3rem;
+        margin-right: 0.5em;
+        transition: color 0.2s, transform 0.2s;
+      }
+    }
+    p {
+      color: #fff;
+      padding: 0 2rem 2rem;
+      transition: all 0.2s;
+    }
+    &_closed {
+      cursor: pointer;
+      p {
+        padding: 0 2rem;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+    &_open {
+      cursor: pointer;
+      h3 {
+        color: #fff;
+        background-color: #f10f3b;
+
+        & > :first-child {
+          transform: rotate(45deg);
+        }
+      }
+      p {
+        background-color: #f10f3b;
+      }
+    }
+  }
+}
