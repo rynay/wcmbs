@@ -1,0 +1,40 @@
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #fff;
+    border: 0.2rem solid currentColor;
+    border-radius: 50rem;
+    color: #292929;
+    transition: color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: #f10f3b;
+    }
+
+    span {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      transform: rotate(45deg);
+    }
+  }
+}
