@@ -7,28 +7,50 @@ type Props = {
 };
 
 export const Form = ({ type }: Props) => {
-  const [state, setState] = useState<{ [key in string]: any }>({});
+  const [state, setState] = useState({
+    email: "",
+    name: "",
+    message: "",
+    phone: "",
+    mtb: false,
+    xc: false,
+    private: false,
+  });
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    if (!e.target) return;
-    setState((state) => ({
-      ...state,
-      [e.target.name]:
-        "checked" in e.target ? e.target.checked : e.target.value,
-    }));
+    const target = e.target;
+    console.log(target);
+    if (!target) return;
+    if (target.type === "checkbox" && "checked" in target) {
+      setState((state) => ({
+        ...state,
+        [target.name]: target.checked,
+      }));
+    } else {
+      setState((state) => ({
+        ...state,
+        [target.name]: target.value,
+      }));
+    }
   };
 
   return (
     <>
-      <form className={s.form} onSubmit={(e) => e.preventDefault()}>
+      <form
+        className={`${s.form} ${
+          type === "contact" ? s.form_large : s.form_small
+        }`}
+        onSubmit={(e) => e.preventDefault()}
+      >
         {type === "contact" && (
           <>
             <input
               name="email"
               value={state.email}
               onChange={handleChange}
+              className={s.half}
               type="email"
               placeholder="Enter Email"
             />
@@ -36,6 +58,7 @@ export const Form = ({ type }: Props) => {
               name="name"
               value={state.name}
               onChange={handleChange}
+              className={s.half}
               type="text"
               placeholder="Enter Name"
             />
